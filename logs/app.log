@@ -1,0 +1,542 @@
+2021-11-05 19:42:43,045 INFO u.g.App [main] Start application
+2021-11-05 19:42:43,234 INFO u.g.App [main] END application
+2021-11-05 20:28:11,699 INFO u.g.App [main] Start application
+2021-11-05 20:28:35,655 INFO u.g.App [main] END application
+2021-11-05 20:28:57,131 INFO u.g.App [main] Start application
+2021-11-05 20:28:57,332 INFO u.g.App [main] END application
+2021-11-08 18:17:08,867 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.2 by Redgate
+2021-11-08 18:17:08,870 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:17:08,888 WARN o.f.c.i.d.b.Database [main] Flyway upgrade recommended: PostgreSQL 14.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 13.
+2021-11-08 18:17:08,912 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.010s)
+2021-11-08 18:17:08,912 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 18:24:06,510 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.2 by Redgate
+2021-11-08 18:24:06,513 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:24:06,529 WARN o.f.c.i.d.b.Database [main] Flyway upgrade recommended: PostgreSQL 14.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 13.
+2021-11-08 18:24:06,548 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 18:24:06,548 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 18:36:39,132 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:36:39,135 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:36:39,171 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 18:36:39,171 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 18:39:58,304 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:39:58,305 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:39:58,348 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.009s)
+2021-11-08 18:39:58,348 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 18:45:40,065 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:45:40,069 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:45:40,108 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.010s)
+2021-11-08 18:45:40,108 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 18:45:40,128 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 18:45:40,178 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 18:45:40,195 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 18:45:40,196 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 18:51:02,071 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:51:02,072 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:51:02,120 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-08 18:51:02,136 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 18:51:02,138 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 18:53:59,958 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:53:59,959 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:54:00,005 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-08 18:54:00,022 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 18:54:00,024 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 18:56:20,306 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:56:20,309 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:56:20,357 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.018s)
+2021-11-08 18:56:20,373 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 18:56:20,375 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 18:57:42,161 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 18:57:42,163 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 18:57:42,205 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.015s)
+2021-11-08 18:57:42,218 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 18:57:42,220 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:08:16,311 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:08:16,314 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:08:16,356 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.015s)
+2021-11-08 19:08:16,371 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:08:16,372 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:09:36,383 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:09:36,384 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:09:36,430 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.016s)
+2021-11-08 19:09:36,445 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:09:36,447 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:09:58,791 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:09:58,792 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:09:58,841 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-08 19:09:58,856 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:09:58,857 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:10:26,739 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:10:26,741 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:10:26,779 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.009s)
+2021-11-08 19:10:26,780 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:11:53,971 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:11:53,975 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:12:21,105 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:12:21,106 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:12:21,138 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 19:12:21,138 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:22:57,577 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:22:57,579 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:22:57,616 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 19:22:57,617 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:30:22,573 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:30:22,575 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:30:22,611 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 19:30:22,611 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:30:22,630 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 19:30:22,674 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 19:30:22,687 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:30:22,688 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:31:02,068 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:31:02,070 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:31:02,111 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.012s)
+2021-11-08 19:31:02,112 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:31:02,127 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-08 19:31:02,129 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:31:56,595 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:31:56,596 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:31:56,636 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.012s)
+2021-11-08 19:31:56,636 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:31:56,650 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-08 19:31:56,652 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:34:36,958 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:34:36,961 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:34:36,995 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 19:34:36,996 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 19:34:37,013 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 19:34:37,059 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 19:34:37,072 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:34:37,073 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:44:59,620 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:44:59,622 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:44:59,665 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.015s)
+2021-11-08 19:44:59,678 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:44:59,679 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 19:51:36,501 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 19:51:36,504 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 19:51:36,545 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.015s)
+2021-11-08 19:51:36,558 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 19:51:36,560 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:06:33,111 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:06:33,113 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:06:33,149 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 20:06:33,149 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 20:13:24,193 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:13:24,195 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:13:24,231 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 20:13:24,232 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 20:13:48,229 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:13:48,232 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:13:48,268 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.009s)
+2021-11-08 20:13:48,268 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 20:13:48,285 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 20:13:48,327 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 20:13:48,342 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:13:48,343 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:14:01,598 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:14:01,600 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:14:01,646 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.016s)
+2021-11-08 20:14:01,660 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:14:01,662 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:14:26,630 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:14:26,631 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:14:26,679 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-08 20:14:26,694 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:14:26,695 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:37:53,518 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:37:53,521 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:37:53,567 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.016s)
+2021-11-08 20:37:53,581 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:37:53,582 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:39:01,842 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:39:01,845 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:39:01,892 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-08 20:39:01,907 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:39:01,909 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:39:28,232 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:39:28,234 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:39:28,278 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.015s)
+2021-11-08 20:39:28,292 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:39:28,293 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:40:09,404 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:40:09,406 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:50:08,139 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:50:08,142 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:50:08,179 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 20:50:08,179 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 20:52:12,529 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:52:12,532 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:52:12,579 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 20:52:12,626 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 20:52:12,653 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:52:12,683 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.014s)
+2021-11-08 20:52:12,696 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:52:12,697 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:53:22,775 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:53:22,778 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:53:22,849 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:53:22,871 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.007s)
+2021-11-08 20:53:22,884 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:53:22,885 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 20:54:58,869 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:54:58,871 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 20:54:58,946 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 20:54:58,970 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.008s)
+2021-11-08 20:54:58,985 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 20:54:58,986 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 21:18:14,631 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:18:14,635 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:18:14,681 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.018s)
+2021-11-08 21:18:14,696 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:18:14,698 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 21:23:09,043 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:23:09,046 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:23:09,082 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 21:23:09,082 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 21:29:05,781 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:29:05,784 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:29:05,820 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-08 21:29:05,820 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-08 21:29:05,838 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 21:29:05,883 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 21:29:05,896 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:29:05,898 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-08 21:30:44,604 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:30:44,607 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:30:44,655 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.021s)
+2021-11-08 21:30:44,669 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:30:44,682 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-08 21:30:44,697 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "002 - Update name of project" failed! Changes successfully rolled back.
+2021-11-08 21:32:29,794 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:32:29,797 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:32:29,847 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.021s)
+2021-11-08 21:32:29,862 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:32:29,874 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-08 21:32:29,889 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "002 - Update name of project" failed! Changes successfully rolled back.
+2021-11-08 21:33:38,659 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:33:38,661 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:33:38,708 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.019s)
+2021-11-08 21:33:38,727 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-08 21:33:38,768 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-08 21:33:38,783 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:33:38,793 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-08 21:33:38,823 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v002 (execution time 00:00.052s)
+2021-11-08 21:38:28,425 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:38:28,427 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:38:28,478 INFO o.f.c.i.c.DbValidate [main] Successfully validated 3 migrations (execution time 00:00.022s)
+2021-11-08 21:38:28,493 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:38:28,505 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-08 21:38:28,538 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-08 21:38:28,559 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 2 migrations to schema "public", now at version v003 (execution time 00:00.075s)
+2021-11-08 21:39:22,018 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:39:22,021 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:39:37,525 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:39:37,528 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:40:53,257 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-08 21:40:53,260 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-08 21:40:53,314 INFO o.f.c.i.c.DbValidate [main] Successfully validated 3 migrations (execution time 00:00.022s)
+2021-11-08 21:40:53,329 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-08 21:40:53,343 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-08 21:40:53,377 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-08 21:40:53,400 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 2 migrations to schema "public", now at version v003 (execution time 00:00.079s)
+2021-11-09 11:45:48,932 INFO u.g.DbStatement [main] 42P01
+2021-11-09 11:45:48,940 INFO u.g.DbStatement [main] ERROR: relation "dev_x_prj" does not exist
+  Позиция: 57
+2021-11-09 11:49:50,692 INFO u.g.DbStatement [main] 42P01
+2021-11-09 11:50:03,450 INFO u.g.DbStatement [main] ERROR: relation "dev_x_prj" does not exist
+  Позиция: 57
+2021-11-09 14:35:11,791 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 14:35:11,794 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 14:36:02,609 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 14:36:02,611 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 14:36:02,666 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.025s)
+2021-11-09 14:36:02,679 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 003
+2021-11-09 14:36:02,692 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Update  level  name"
+2021-11-09 14:36:02,716 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v004 (execution time 00:00.043s)
+2021-11-09 18:15:30,378 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:15:30,381 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:15:51,526 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:15:51,529 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:18:05,231 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:18:05,233 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:18:26,577 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:18:26,579 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:21:33,983 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:21:33,986 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:23:23,632 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:23:23,635 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:24:37,316 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:24:37,318 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:24:37,367 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.020s)
+2021-11-09 18:24:37,384 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-09 18:24:37,420 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-09 18:24:37,432 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-09 18:24:37,441 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-09 18:24:37,467 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-09 18:24:37,499 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Update  level  name"
+2021-11-09 18:24:37,522 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Update  project column  name"
+2021-11-09 18:24:37,542 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 4 migrations to schema "public", now at version v005 (execution time 00:00.119s)
+2021-11-09 18:26:04,752 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:26:04,754 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:26:04,802 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.019s)
+2021-11-09 18:26:04,818 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-09 18:26:04,853 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-09 18:26:04,864 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-09 18:26:04,874 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-09 18:26:04,899 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-09 18:26:04,907 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "003 - Update table name" failed! Changes successfully rolled back.
+2021-11-09 18:26:58,448 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:26:58,451 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:26:58,502 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.020s)
+2021-11-09 18:26:58,519 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-09 18:26:58,558 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-09 18:26:58,571 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-09 18:26:58,579 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-09 18:26:58,605 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-09 18:26:58,631 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Update  level  name"
+2021-11-09 18:26:58,654 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Update  project column  name"
+2021-11-09 18:26:58,661 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "005 - Update  project column  name" failed! Changes successfully rolled back.
+2021-11-09 18:28:25,886 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:28:25,889 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:28:25,937 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.019s)
+2021-11-09 18:28:25,954 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-09 18:28:25,987 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-09 18:28:25,998 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-09 18:28:26,008 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-09 18:28:26,032 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-09 18:28:26,039 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "003 - Update table name" failed! Changes successfully rolled back.
+2021-11-09 18:29:18,253 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:29:18,256 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:29:18,304 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.021s)
+2021-11-09 18:29:18,319 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-09 18:29:18,353 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-09 18:29:18,364 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-09 18:29:18,373 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-09 18:29:18,397 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-09 18:29:18,405 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "003 - Update table name" failed! Changes successfully rolled back.
+2021-11-09 18:30:15,228 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-09 18:30:15,230 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-09 18:30:15,277 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.020s)
+2021-11-09 18:30:15,293 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2021-11-09 18:30:15,331 INFO o.f.c.i.c.DbBaseline [main] Successfully baselined schema with version: 1
+2021-11-09 18:30:15,342 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 1
+2021-11-09 18:30:15,351 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - Update name of project"
+2021-11-09 18:30:15,375 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-09 18:30:15,386 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "003 - Update table name" failed! Changes successfully rolled back.
+2021-11-10 11:02:22,459 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:02:22,461 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:02:22,507 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-10 11:02:22,525 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:02:22,566 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:02:22,579 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:02:22,642 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v001 (execution time 00:00.082s)
+2021-11-10 11:03:50,687 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:03:50,689 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:03:50,740 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.023s)
+2021-11-10 11:03:50,754 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 001
+2021-11-10 11:03:50,774 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:03:50,808 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v002 (execution time 00:00.062s)
+2021-11-10 11:07:47,139 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:07:47,139 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:07:47,189 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.018s)
+2021-11-10 11:07:47,207 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:07:47,251 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:07:47,263 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:07:47,337 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:07:47,354 ERROR o.f.c.i.c.DbMigrate [main] Migration of schema "public" to version "002 - init tables" failed! Changes successfully rolled back.
+2021-11-10 11:10:09,560 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:10:09,563 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:10:09,608 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.018s)
+2021-11-10 11:10:09,624 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:10:09,664 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:10:09,676 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:10:09,747 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:10:09,778 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 2 migrations to schema "public", now at version v002 (execution time 00:00.122s)
+2021-11-10 11:11:44,633 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:11:44,635 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:11:44,686 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.019s)
+2021-11-10 11:11:44,703 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:11:44,746 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:11:44,758 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:11:44,830 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:11:44,859 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 2 migrations to schema "public", now at version v002 (execution time 00:00.121s)
+2021-11-10 11:12:50,064 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:12:50,066 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:12:50,116 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.023s)
+2021-11-10 11:12:50,130 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 002
+2021-11-10 11:12:50,131 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-10 11:13:59,691 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:13:59,691 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:13:59,710 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.007s)
+2021-11-10 11:13:59,718 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 002
+2021-11-10 11:13:59,719 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-10 11:15:23,145 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:15:23,145 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:15:23,193 INFO o.f.c.i.c.DbValidate [main] Successfully validated 2 migrations (execution time 00:00.018s)
+2021-11-10 11:15:23,211 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:15:23,250 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:15:23,263 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:15:23,334 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:15:23,369 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 2 migrations to schema "public", now at version v002 (execution time 00:00.125s)
+2021-11-10 11:17:43,244 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:17:43,244 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:17:43,300 INFO o.f.c.i.c.DbValidate [main] Successfully validated 3 migrations (execution time 00:00.024s)
+2021-11-10 11:17:43,313 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 002
+2021-11-10 11:17:43,326 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 11:17:43,356 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v003 (execution time 00:00.050s)
+2021-11-10 11:18:49,503 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:18:49,506 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:18:49,556 INFO o.f.c.i.c.DbValidate [main] Successfully validated 4 migrations (execution time 00:00.024s)
+2021-11-10 11:18:49,571 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 003
+2021-11-10 11:18:49,584 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column to  table projects"
+2021-11-10 11:18:49,614 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v004 (execution time 00:00.051s)
+2021-11-10 11:23:09,116 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:23:09,116 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:23:09,170 INFO o.f.c.i.c.DbValidate [main] Successfully validated 5 migrations (execution time 00:00.020s)
+2021-11-10 11:23:09,187 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:23:09,226 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:23:09,239 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:23:09,311 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:23:09,348 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 11:23:09,373 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column 'cost' to  table projects"
+2021-11-10 11:23:09,394 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Add  column to  table projects"
+2021-11-10 11:23:09,412 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 5 migrations to schema "public", now at version v005 (execution time 00:00.192s)
+2021-11-10 11:39:13,973 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:39:13,976 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:39:14,028 INFO o.f.c.i.c.DbValidate [main] Successfully validated 6 migrations (execution time 00:00.022s)
+2021-11-10 11:39:14,046 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:39:14,089 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:39:14,102 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:39:14,183 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:39:14,218 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 11:39:14,243 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column 'cost' to  table projects"
+2021-11-10 11:39:14,266 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Add  column to  table projects"
+2021-11-10 11:39:14,291 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "006 - Add  data 'cost'  to  table projects"
+2021-11-10 11:39:14,313 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 6 migrations to schema "public", now at version v006 (execution time 00:00.231s)
+2021-11-10 11:40:15,006 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:40:15,008 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:40:15,064 INFO o.f.c.i.c.DbValidate [main] Successfully validated 7 migrations (execution time 00:00.027s)
+2021-11-10 11:40:15,078 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 006
+2021-11-10 11:40:15,092 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "007 - Update  column 'date' from  table projects"
+2021-11-10 11:40:15,120 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v007 (execution time 00:00.050s)
+2021-11-10 11:41:01,610 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:41:01,612 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 11:41:01,667 INFO o.f.c.i.c.DbValidate [main] Successfully validated 7 migrations (execution time 00:00.023s)
+2021-11-10 11:41:01,682 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:41:01,725 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:41:01,738 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:41:01,809 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 11:41:01,843 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 11:41:01,869 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column 'cost' to  table projects"
+2021-11-10 11:41:01,890 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Add  column to  table projects"
+2021-11-10 11:41:01,914 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "006 - Add  data 'cost'  to  table projects"
+2021-11-10 11:41:01,940 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "007 - Update  column 'date' from  table projects"
+2021-11-10 11:41:01,959 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 7 migrations to schema "public", now at version v007 (execution time 00:00.240s)
+2021-11-10 11:43:20,782 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:43:20,786 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 11:43:20,821 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.008s)
+2021-11-10 11:43:20,821 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-10 11:43:20,838 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:43:20,884 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:43:20,886 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-10 11:45:04,126 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:45:04,129 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 11:45:04,178 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.020s)
+2021-11-10 11:45:04,197 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:45:04,238 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:45:04,251 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:45:04,341 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v001 (execution time 00:00.110s)
+2021-11-10 11:50:24,546 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:50:24,549 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 11:50:24,596 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-10 11:50:24,613 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 11:50:24,653 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 11:50:24,666 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 11:50:24,728 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v001 (execution time 00:00.081s)
+2021-11-10 11:51:22,458 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 11:51:22,461 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 11:51:22,509 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.022s)
+2021-11-10 11:51:22,523 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 001
+2021-11-10 11:51:22,524 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-10 12:06:02,364 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 12:06:02,367 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 12:06:02,413 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-10 12:06:02,430 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 12:06:02,484 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 12:06:02,498 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 12:06:02,557 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v001 (execution time 00:00.079s)
+2021-11-10 12:06:43,291 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 12:06:43,294 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 12:06:43,346 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.023s)
+2021-11-10 12:06:43,360 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 001
+2021-11-10 12:06:43,362 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-10 12:09:50,907 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 12:09:50,909 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 12:09:50,958 INFO o.f.c.i.c.DbValidate [main] Successfully validated 1 migration (execution time 00:00.017s)
+2021-11-10 12:09:50,976 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 12:09:51,017 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 12:09:51,030 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 12:09:51,111 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 1 migration to schema "public", now at version v001 (execution time 00:00.101s)
+2021-11-10 12:11:06,403 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 12:11:06,405 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres_test (PostgreSQL 14.0)
+2021-11-10 12:11:06,460 INFO o.f.c.i.c.DbValidate [main] Successfully validated 7 migrations (execution time 00:00.027s)
+2021-11-10 12:11:06,474 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": 001
+2021-11-10 12:11:06,495 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 12:11:06,535 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 12:11:06,563 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column 'cost' to  table projects"
+2021-11-10 12:11:06,586 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Add  column to  table projects"
+2021-11-10 12:11:06,611 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "006 - Add  data 'cost'  to  table projects"
+2021-11-10 12:11:06,644 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "007 - Update  column 'date' from  table projects"
+2021-11-10 12:11:06,665 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 6 migrations to schema "public", now at version v007 (execution time 00:00.200s)
+2021-11-10 12:12:17,159 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 12:12:17,162 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 12:12:17,198 INFO o.f.c.i.c.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.009s)
+2021-11-10 12:12:17,198 WARN o.f.c.i.c.DbValidate [main] No migrations found. Are your locations set up correctly?
+2021-11-10 12:12:17,217 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 12:12:17,262 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 12:12:17,264 INFO o.f.c.i.c.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2021-11-10 12:12:57,474 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 12:12:57,477 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 12:12:57,532 INFO o.f.c.i.c.DbValidate [main] Successfully validated 7 migrations (execution time 00:00.028s)
+2021-11-10 12:12:57,547 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 12:12:57,566 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 12:12:57,665 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 12:12:57,701 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 12:12:57,728 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column 'cost' to  table projects"
+2021-11-10 12:12:57,750 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Add  column to  table projects"
+2021-11-10 12:12:57,788 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "006 - Add  data 'cost'  to  table projects"
+2021-11-10 12:12:57,820 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "007 - Update  column 'date' from  table projects"
+2021-11-10 12:12:57,840 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 7 migrations to schema "public", now at version v007 (execution time 00:00.301s)
+2021-11-10 12:22:05,120 INFO u.g.DbStatement [main] 42703
+2021-11-10 12:22:05,122 INFO u.g.DbStatement [main] ERROR: column "skils_id" does not exist
+  Подсказка: Perhaps you meant to reference the column "developer_skills.skills_id".
+  Позиция: 90
+2021-11-10 15:50:00,789 INFO u.g.DbStatement [main] 23505
+2021-11-10 15:50:00,791 INFO u.g.DbStatement [main] ERROR: duplicate key value violates unique constraint "developers_pkey"
+  Подробности: Key (id)=(1) already exists.
+2021-11-10 16:41:49,675 INFO o.f.c.i.l.VersionPrinter [main] Flyway Community Edition 8.0.3 by Redgate
+2021-11-10 16:41:49,676 INFO o.f.c.i.d.b.BaseDatabaseType [main] Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 14.0)
+2021-11-10 16:41:49,730 INFO o.f.c.i.c.DbValidate [main] Successfully validated 7 migrations (execution time 00:00.022s)
+2021-11-10 16:41:49,748 INFO o.f.c.i.s.JdbcTableSchemaHistory [main] Creating Schema History table "public"."flyway_schema_history" ...
+2021-11-10 16:41:49,800 INFO o.f.c.i.c.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2021-11-10 16:41:49,814 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "001 - Create all tables"
+2021-11-10 16:41:49,884 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "002 - init tables"
+2021-11-10 16:41:49,920 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "003 - Update table name"
+2021-11-10 16:41:49,948 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "004 - Add  column 'cost' to  table projects"
+2021-11-10 16:41:49,969 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "005 - Add  column to  table projects"
+2021-11-10 16:41:49,993 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "006 - Add  data 'cost'  to  table projects"
+2021-11-10 16:41:50,020 INFO o.f.c.i.c.DbMigrate [main] Migrating schema "public" to version "007 - Update  column 'date' from  table projects"
+2021-11-10 16:41:50,042 INFO o.f.c.i.c.DbMigrate [main] Successfully applied 7 migrations to schema "public", now at version v007 (execution time 00:00.249s)
+2021-11-10 17:48:15,813 INFO u.g.DbStatement [main] 42601
+2021-11-10 17:48:15,822 INFO u.g.DbStatement [main] ERROR: syntax error at or near "%"
+  Позиция: 15
+2021-11-12 21:19:45,292 INFO u.g.DbStatement [main] 42703
+2021-11-12 21:19:45,301 INFO u.g.DbStatement [main] ERROR: column "language" does not exist
+  Позиция: 32
+2021-11-12 21:56:54,882 INFO u.g.DbStatement [main] 42703
+2021-11-12 21:56:54,890 INFO u.g.DbStatement [main] ERROR: column "language" does not exist
+  Позиция: 32
+2021-11-12 21:59:23,494 INFO u.g.DbStatement [main] 42703
+2021-11-12 21:59:23,501 INFO u.g.DbStatement [main] ERROR: column "language" does not exist
+  Позиция: 32
+2021-11-12 22:20:27,167 INFO u.g.d.DeveloperDao [main] Record was updated
