@@ -1,14 +1,18 @@
 package ua.goIt.dao;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ua.goIt.DbStatement;
-import ua.goIt.model.Developer;
 import ua.goIt.model.Project;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProjectDao extends AbstractDao<Project>{
+    private static final Logger LOGGER = LogManager.getLogger(ProjectDao.class);
 
     @Override
     String getTableName() {
@@ -48,5 +52,19 @@ public class ProjectDao extends AbstractDao<Project>{
             ps.setString(4, entity.getDate());
             ps.setLong(5,entity.getId());
         });
+    }
+    public List<Project> getProjectByDeveloperId(Long id){
+        List<Project> resultList = new ArrayList<>();
+        String query = String.format("select * from %s p  where p.id in(select project_id from developer_project dp  where dp.developer_id = ?)", getTableName());
+        try {
+            ResultSet resultSet = DbStatement.executeStatementQuery(
+                    query, ps -> ps.setLong(1,id));
+            while (resultSet.next()) {
+                resultList.add(mapToEntity(resultSet));
+            }
+        } catch (SQLException e) {
+            LOGGER.error("Get all method exception", e);
+        }
+        return resultList;
     }
 }

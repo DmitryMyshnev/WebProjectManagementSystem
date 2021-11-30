@@ -1,4 +1,4 @@
-package ua.goIt.services;
+package ua.goIt.services.webService;
 
 
 import java.util.List;

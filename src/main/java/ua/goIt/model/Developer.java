@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class Developer  implements Identity {
+public class Developer implements Identity {
     private Long id;
     private String name;
     private Integer age;
@@ -16,6 +16,8 @@ public class Developer  implements Identity {
     private List<Project> projects;
 
     public Developer() {
+        projects = new ArrayList<>();
+        skills = new ArrayList<>();
     }
 
     public Developer(String name, Integer age, String sex, Integer salary) {
@@ -35,6 +37,20 @@ public class Developer  implements Identity {
         this.skills.add(skill);
     }
 
+    public String getSkillsAsString() {
+        StringBuffer res = new StringBuffer();
+        skills.forEach(skill -> {
+            res.append(skill.getLanguage()).append(" (").append(skill.getLevel()).append(");<br>");
+        });
+        return res.toString();
+    }
+    public String getProjectAsString(){
+        StringBuffer res = new StringBuffer();
+        projects.forEach(project -> {
+            res.append(project.getName()).append(";<br>");
+        });
+        return res.toString();
+    }
     @Override
     public Long getId() {
         return id;

@@ -38,10 +38,11 @@ public class SkillDao extends AbstractDao<Skill>{
 
     @Override
     public void update(Skill entity) {
-        String query = "update skills set language = ? where id = ?";
+        String query = "update skills set language = ?, level = ? where id = ?";
         DbStatement.executeStatementUpdate(query, ps -> {
             ps.setString(1, entity.getLanguage());
-            ps.setLong(2,entity.getId());
+            ps.setString(2,entity.getLevel());
+            ps.setLong(3,entity.getId());
         });
     }
     public List<Skill> findByName(String name){
@@ -59,5 +60,34 @@ public class SkillDao extends AbstractDao<Skill>{
             LOGGER.info(e.getMessage());
         }
         return list;
+    }
+    public List<Skill> getSkillsById(Long id){
+        List<Skill> resultList = new ArrayList<>();
+        String query = String.format("select * from %s s where s.id in(select skills_id from developer_skills ds where ds.developer_id = ?)", getTableName());
+        try {
+            ResultSet resultSet = DbStatement.executeStatementQuery(
+                    query, ps -> ps.setLong(1,id));
+            while (resultSet.next()) {
+                resultList.add(mapToEntity(resultSet));
+            }
+        } catch (SQLException e) {
+            LOGGER.error("Get all method exception", e);
+        }
+        return resultList;
+    }
+    public List<String> getAllLanguages(){
+        List<String> resultList = new ArrayList<>();
+        String query = String.format("select distinct language  from %s", getTableName());
+        try {
+            ResultSet resultSet = DbStatement.executeStatementQuery(
+                    query, ps -> {
+                    });
+            while (resultSet.next()) {
+                resultList.add(resultSet.getString("language"));
+            }
+        } catch (SQLException e) {
+            LOGGER.error("Get all method exception", e);
+        }
+        return resultList;
     }
 }

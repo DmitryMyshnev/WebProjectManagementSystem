@@ -27,6 +27,8 @@
                 <th scope="col">Age</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Salary</th>
+                <th scope="col">Skills</th>
+                <th scope="col">Projects</th>
             </tr>
             </thead>
             <tbody>
@@ -41,6 +43,8 @@
                     <td><%= developer.getAge() %></td>
                     <td><%= developer.getSex() %></td>
                     <td><%= developer.getSalary() %></td>
+                    <td style="width:150px;"><%= developer.getSkillsAsString() %></td>
+                    <td style="width:150px;"><%= developer.getProjectAsString() %></td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="Second group">

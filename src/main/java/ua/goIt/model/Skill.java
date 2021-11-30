@@ -19,6 +19,7 @@ public class Skill implements Identity {
     }
 
     public Skill() {
+        this.developers = new ArrayList<>();
     }
 
     void setDeveloper(Developer developer) {

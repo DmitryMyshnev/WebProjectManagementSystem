@@ -12,6 +12,7 @@ import ua.goIt.services.HandleBodyUtil;
 import ua.goIt.services.webService.DeveloperWebService;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Optional;
 
 
@@ -29,7 +30,6 @@ public class EditDeveloperServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String[] requestURI = req.getRequestURI().split("/");
         String id = requestURI[requestURI.length-1];
-
         Optional<Developer> userOpt = developerWebService.findById(Long.parseLong(id)).stream().map(Developer.class::cast).findFirst();
         if (userOpt.isPresent()) {
             Developer developer = userOpt.get();

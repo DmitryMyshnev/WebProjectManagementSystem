@@ -6,10 +6,7 @@ import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 import ua.goIt.DbStatement;
 import ua.goIt.services.consoleService.DeveloperService;
-import ua.goIt.services.webService.CompanyWebService;
-import ua.goIt.services.webService.CustomerWebService;
-import ua.goIt.services.webService.DeveloperWebService;
-import ua.goIt.services.webService.ProjectWebService;
+import ua.goIt.services.webService.*;
 
 
 @WebListener
@@ -23,5 +20,6 @@ public class LoadListener implements ServletContextListener {
         servletContext.setAttribute("companyWebService", CompanyWebService.getInstance());
         servletContext.setAttribute("customerWebService", CustomerWebService.getInstance());
         servletContext.setAttribute("projectWebService", ProjectWebService.getInstance());
+        servletContext.setAttribute("skillsWebServlet", SkillsWebService.getInstance());
     }
 }

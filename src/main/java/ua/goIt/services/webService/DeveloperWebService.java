@@ -1,19 +1,29 @@
 package ua.goIt.services.webService;
 
-import ua.goIt.dao.DeveloperDao;
+import ua.goIt.dao.*;
 import ua.goIt.model.Developer;
-import ua.goIt.services.CrudWeb;
+import ua.goIt.model.Project;
+import ua.goIt.model.Skill;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 
 public class DeveloperWebService implements CrudWeb<Developer> {
-    private DeveloperDao developerDao;
+    private final DeveloperDao developerDao;
+    private final DeveloperToProjectDao developerToProjectDao;
+    private final DeveloperToSkillDao developerToSkillDao;
+    private final SkillDao skillDao;
+    private final ProjectDao projectDao;
     private static DeveloperWebService developerWebService;
 
     private DeveloperWebService() {
         developerDao = new DeveloperDao();
+        developerToProjectDao = new DeveloperToProjectDao();
+        developerToSkillDao = new DeveloperToSkillDao();
+        skillDao = new SkillDao();
+        projectDao = new ProjectDao();
     }
 
     @Override
@@ -28,17 +38,31 @@ public class DeveloperWebService implements CrudWeb<Developer> {
 
     @Override
     public void delete(Developer entity) {
+        developerToProjectDao.getAllById(entity.getId()).forEach(developerToProjectDao::delete);
+        developerToSkillDao.getAllById(entity.getId()).forEach(developerToSkillDao::delete);
         developerDao.delete(entity);
     }
 
     @Override
     public List<Developer> getAll() {
-        return developerDao.getAll();
+        List<Developer> allDeveloper = developerDao.getAll();
+        allDeveloper.forEach(developer -> {
+            List<Skill> skills = new ArrayList<>(getAllSkills(developer.getId()));
+            List<Project>  projects = new ArrayList<>(getAllProject(developer.getId()));
+            developer.setSkills(skills);
+            developer.setProjects(projects);
+        });
+        return allDeveloper;
     }
 
     @Override
     public Optional<Developer> findById(Long id) {
-        return developerDao.getById(id);
+        Optional<Developer> developer = developerDao.getById(id);
+        List<Skill> skills = new ArrayList<>(getAllSkills(developer.get().getId()));
+        List<Project>  projects = new ArrayList<>(getAllProject(developer.get().getId()));
+        developer.get().setSkills(skills);
+        developer.get().setProjects(projects);
+        return developer;
     }
 
     public static DeveloperWebService getInstance() {
@@ -46,5 +70,17 @@ public class DeveloperWebService implements CrudWeb<Developer> {
             developerWebService = new DeveloperWebService();
         }
         return developerWebService;
+    }
+
+    public List<Skill> getAllSkills(Long id) {
+        return skillDao.getSkillsById(id);
+    }
+
+    public List<String> getAllLanguages() {
+        return skillDao.getAllLanguages();
+    }
+
+    public List<Project> getAllProject(Long id){
+        return projectDao.getProjectByDeveloperId(id);
     }
 }
