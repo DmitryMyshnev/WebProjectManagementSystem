@@ -24,6 +24,7 @@
                 <th scope="col">Id</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
+                <th scope="col">Projects</th>
             </tr>
             </thead>
             <tbody>
@@ -36,6 +37,7 @@
                     <td><%= customer.getId() %></td>
                     <td><%= customer.getFirstName() %></td>
                     <td><%= customer.getLastName() %></td>
+                    <td><%= customer.getProjectsAsString() %></td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="Second group">

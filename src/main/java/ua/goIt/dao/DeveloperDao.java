@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.goIt.DbStatement;
 import ua.goIt.model.Developer;
+import ua.goIt.model.Project;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,6 +14,10 @@ import java.util.List;
 public class DeveloperDao extends AbstractDao<Developer> {
 
     private static final Logger LOGGER = LogManager.getLogger(DeveloperDao.class);
+    private static DeveloperDao developerDao;
+
+    private DeveloperDao() {
+    }
 
     String getTableName() {
         return "developers";
@@ -52,93 +57,53 @@ public class DeveloperDao extends AbstractDao<Developer> {
         });
     }
 
-    public  List<Developer> findByName(String name){
-        List<Developer> list = new ArrayList<>();
-        String query = "select * from developers where name = ?";
-        try {
-            ResultSet resultSet = DbStatement.executeStatementQuery(
-                    query, ps -> ps.setString(1, name));
-            while (resultSet.next()) {
-                list.add(mapToEntity(resultSet));
-            }
-            return list;
-        } catch (SQLException e) {
-            LOGGER.info(e.getSQLState());
-            LOGGER.info(e.getMessage());
-        }
-        return list;
+    @Override
+    public void delete(Developer entity) {
+        String query = "delete from developer_project where developer_id = ?;" +
+                "delete from developer_skills where developer_id =?;" +
+                "delete from %s where id = ?;";
+        query = String.format(query, getTableName());
+        DbStatement.executeStatementUpdate(query, ps -> {
+            ps.setLong(1, entity.getId());
+            ps.setLong(2,entity.getId());
+            ps.setLong(3,entity.getId());
+        });
+        LOGGER.debug("Deleted record from " + getTableName());
     }
-    public Integer getAllSalaryByProject(String projectName) {
-        String query = "select sum(salary) as total from developers as d" +
-                "  join developer_project as dxp on d.id = dxp.developer_id" +
-                "  join projects as p on p.id = dxp. project_id" +
-                "  where p.id = (select id from projects where project_name = ?);";
+   public List<Developer> getAllDeveloperByProjectId(Long id){
+       List<Developer> resultList = new ArrayList<>();
+       String query = String.format("select * from %s d  where d.id in(select developer_id from developer_project dp  where dp.project_id = ?)", getTableName());
+       try {
+           ResultSet resultSet = DbStatement.executeStatementQuery(
+                   query, ps -> ps.setLong(1,id));
+           while (resultSet.next()) {
+               resultList.add(mapToEntity(resultSet));
+           }
+       } catch (SQLException e) {
+           LOGGER.error("Get all method exception", e);
+       }
+       return resultList;
+   }
+
+    public List<Developer> getAllDeveloperBySkillsId(Long id){
+        List<Developer> resultList = new ArrayList<>();
+        String query = String.format("select * from %s d  where d.id in(select developer_id from developer_skills ds  where ds.skills_id = ?)", getTableName());
         try {
             ResultSet resultSet = DbStatement.executeStatementQuery(
-                    query, ps -> ps.setString(1, projectName));
+                    query, ps -> ps.setLong(1,id));
             while (resultSet.next()) {
-                return resultSet.getInt("total");
+                resultList.add(mapToEntity(resultSet));
             }
         } catch (SQLException e) {
-            LOGGER.info(e.getSQLState());
-            LOGGER.info(e.getMessage());
+            LOGGER.error("Get all method exception", e);
         }
-        return -1;
+        return resultList;
     }
 
-    public List<Developer> getAllDeveloperByProject(String projectName) {
-        List<Developer> list = new ArrayList<>();
-        String query = " select * from developers d where id in (" +
-                " select developer_id from developer_project dp where dp.project_id =(" +
-                " select id from projects p where project_name = ?));";
-        try {
-            ResultSet resultSet = DbStatement.executeStatementQuery(
-                    query, ps -> ps.setString(1, projectName));
-            while (resultSet.next()) {
-                list.add(mapToEntity(resultSet));
-            }
-            return list;
-        } catch (SQLException e) {
-            LOGGER.info(e.getSQLState());
-            LOGGER.info(e.getMessage());
+   public static DeveloperDao getInstance(){
+        if(developerDao == null){
+            developerDao = new DeveloperDao();
         }
-        return list;
-    }
-    public List<Developer> getDeveloperBySkills(String skillsName){
-        List<Developer> list = new ArrayList<>();
-        String query = "select * from developers  where id in(" +
-                " select developer_id from developer_skills  where skills_id in (" +
-                " select id from skills where language = ?));";
-        try {
-            ResultSet resultSet = DbStatement.executeStatementQuery(
-                    query, ps -> ps.setString(1, skillsName));
-            while (resultSet.next()) {
-                list.add(mapToEntity(resultSet));
-            }
-            return list;
-        } catch (SQLException e) {
-            LOGGER.info(e.getSQLState());
-            LOGGER.info(e.getMessage());
-        }
-        return list;
-    }
-    public List<Developer> getDeveloperByLevel(String level){
-        List<Developer> list = new ArrayList<>();
-        String query = " select * from developers  where id in(" +
-                " select developer_id from developer_skills  where skills_id in (" +
-                " select id from skills where level = ?));";
-        try {
-            ResultSet resultSet = DbStatement.executeStatementQuery(
-                    query, ps -> ps.setString(1, level));
-            while (resultSet.next()) {
-                list.add(mapToEntity(resultSet));
-            }
-            return list;
-        } catch (SQLException e) {
-            LOGGER.info(e.getSQLState());
-            LOGGER.info(e.getMessage());
-        }
-        return list;
-    }
-
+        return developerDao;
+   }
 }

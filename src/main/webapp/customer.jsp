@@ -12,14 +12,14 @@
 <div class="row">
         <h2>Edit customer</h2>
     </div>
-    <div class="row">
+    <div class="row col-6">
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-2" role="group" aria-label="Second group">
                 <a href="/customers" type="button" class="btn btn-success">Back to customer</a>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row col-6">
         <div class="mb-3">
             <label for="id" class="form-label">ID</label>
             <input type="text" disabled class="form-control"

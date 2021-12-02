@@ -12,7 +12,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProjectDao extends AbstractDao<Project>{
+    private static ProjectDao projectDao;
     private static final Logger LOGGER = LogManager.getLogger(ProjectDao.class);
+
+    private ProjectDao() {
+    }
 
     @Override
     String getTableName() {
@@ -53,6 +57,23 @@ public class ProjectDao extends AbstractDao<Project>{
             ps.setLong(5,entity.getId());
         });
     }
+
+    @Override
+    public void delete(Project entity) {
+        String query = "delete from developer_project where project_id = ?;" +
+                "delete from custom_project where project_id = ?;" +
+                "delete from company_project where project_id = ?;" +
+                "delete from %s where id = ?;";
+        query = String.format(query, getTableName());
+        DbStatement.executeStatementUpdate(query, ps -> {
+            ps.setLong(1, entity.getId());
+            ps.setLong(2,entity.getId());
+            ps.setLong(3,entity.getId());
+            ps.setLong(4,entity.getId());
+        });
+        LOGGER.debug("Deleted record from " + getTableName());
+    }
+
     public List<Project> getProjectByDeveloperId(Long id){
         List<Project> resultList = new ArrayList<>();
         String query = String.format("select * from %s p  where p.id in(select project_id from developer_project dp  where dp.developer_id = ?)", getTableName());
@@ -66,5 +87,39 @@ public class ProjectDao extends AbstractDao<Project>{
             LOGGER.error("Get all method exception", e);
         }
         return resultList;
+    }
+    public List<Project> getProjectByCompanyId(Long id){
+        List<Project> resultList = new ArrayList<>();
+        String query = String.format("select * from %s p  where p.id in(select project_id from company_project cp  where cp.company_id = ?)", getTableName());
+        try {
+            ResultSet resultSet = DbStatement.executeStatementQuery(
+                    query, ps -> ps.setLong(1,id));
+            while (resultSet.next()) {
+                resultList.add(mapToEntity(resultSet));
+            }
+        } catch (SQLException e) {
+            LOGGER.error("Get all method exception", e);
+        }
+        return resultList;
+    }
+    public List<Project> getProjectByCustomerId(Long id){
+        List<Project> resultList = new ArrayList<>();
+        String query = String.format("select * from %s p  where p.id in(select project_id from custom_project cp  where cp.custom_id = ?)", getTableName());
+        try {
+            ResultSet resultSet = DbStatement.executeStatementQuery(
+                    query, ps -> ps.setLong(1,id));
+            while (resultSet.next()) {
+                resultList.add(mapToEntity(resultSet));
+            }
+        } catch (SQLException e) {
+            LOGGER.error("Get all method exception", e);
+        }
+        return resultList;
+    }
+    public static ProjectDao getInstance(){
+        if(projectDao == null){
+            projectDao = new ProjectDao();
+        }
+        return projectDao;
     }
 }

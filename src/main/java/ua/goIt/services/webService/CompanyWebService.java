@@ -1,8 +1,9 @@
 package ua.goIt.services.webService;
 
 import ua.goIt.dao.CompanyDao;
-import ua.goIt.dao.CompanyToProjectDao;
+import ua.goIt.dao.ProjectDao;
 import ua.goIt.model.Company;
+import ua.goIt.model.Project;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,11 +11,12 @@ import java.util.Optional;
 public class CompanyWebService implements CrudWeb<Company> {
     private static CompanyWebService companyWebService;
     private final CompanyDao companyDao;
-    private final CompanyToProjectDao companyToProjectDao;
+    private final ProjectDao projectDao;
+
 
     private CompanyWebService() {
-        companyDao = new CompanyDao();
-        companyToProjectDao = new CompanyToProjectDao();
+        companyDao =  CompanyDao.getInstance();
+        projectDao = ProjectDao.getInstance();
     }
 
     @Override
@@ -29,18 +31,23 @@ public class CompanyWebService implements CrudWeb<Company> {
 
     @Override
     public void delete(Company entity) {
-        companyToProjectDao.getAllById(entity.getId()).forEach(companyToProjectDao::delete);
         companyDao.delete(entity);
     }
 
     @Override
     public List<Company> getAll() {
-        return companyDao.getAll();
+        List<Company> companyList = companyDao.getAll();
+        companyList.forEach(company -> company.setProjects(getAllProjectById(company.getId())));
+        return companyList;
     }
 
     @Override
     public Optional<Company> findById(Long id) {
         return companyDao.getById(id);
+    }
+
+    private List<Project> getAllProjectById(Long id){
+      return projectDao.getProjectByCompanyId(id);
     }
 
     public static CompanyWebService getInstance() {

@@ -1,6 +1,6 @@
 package ua.goIt.services.webService;
 
-import ua.goIt.dao.DeveloperToSkillDao;
+import ua.goIt.dao.DeveloperDao;
 import ua.goIt.dao.SkillDao;
 import ua.goIt.model.Skill;
 
@@ -10,11 +10,11 @@ import java.util.Optional;
 public class SkillsWebService implements CrudWeb<Skill> {
     private static SkillsWebService skillsWebService;
     private final SkillDao skillDao;
-    private final DeveloperToSkillDao developerToSkillDao;
+    private final DeveloperDao developerDao;
 
     private SkillsWebService() {
-        skillDao = new SkillDao();
-        developerToSkillDao = new DeveloperToSkillDao();
+        skillDao =  SkillDao.getInstance();
+        developerDao = DeveloperDao.getInstance();
     }
 
     @Override
@@ -29,13 +29,16 @@ public class SkillsWebService implements CrudWeb<Skill> {
 
     @Override
     public void delete(Skill entity) {
-        developerToSkillDao.getAllById(entity.getId()).forEach(developerToSkillDao::delete);
         skillDao.delete(entity);
     }
 
     @Override
     public List<Skill> getAll() {
-        return skillDao.getAll();
+        List<Skill> allSkills = skillDao.getAll();
+        allSkills.forEach(skill -> {
+            skill.setDevelopers(developerDao.getAllDeveloperBySkillsId(skill.getId()));
+        });
+        return allSkills;
     }
 
     @Override

@@ -5,7 +5,6 @@ import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 import ua.goIt.DbStatement;
-import ua.goIt.services.consoleService.DeveloperService;
 import ua.goIt.services.webService.*;
 
 

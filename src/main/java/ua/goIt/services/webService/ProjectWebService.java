@@ -1,5 +1,8 @@
 package ua.goIt.services.webService;
 
+import ua.goIt.dao.CompanyDao;
+import ua.goIt.dao.CustomerDao;
+import ua.goIt.dao.DeveloperDao;
 import ua.goIt.dao.ProjectDao;
 import ua.goIt.model.Project;
 
@@ -9,9 +12,15 @@ import java.util.Optional;
 public class ProjectWebService implements CrudWeb<Project> {
     private static ProjectWebService projectWebService;
     private final ProjectDao projectDao;
+    private final DeveloperDao developerDao;
+    private final CompanyDao companyDao;
+    private final CustomerDao customerDao;
 
     private ProjectWebService() {
-        projectDao = new ProjectDao();
+        projectDao =  ProjectDao.getInstance();
+        developerDao = DeveloperDao.getInstance();
+        companyDao = CompanyDao.getInstance();
+        customerDao = CustomerDao.getInstance();
     }
 
     @Override
@@ -31,7 +40,13 @@ public class ProjectWebService implements CrudWeb<Project> {
 
     @Override
     public List<Project> getAll() {
-        return projectDao.getAll();
+        List<Project> allProject = projectDao.getAll();
+        allProject.forEach(project -> {
+            project.setDevelopers(developerDao.getAllDeveloperByProjectId(project.getId()));
+            project.setCompanies(companyDao.getAllCompanyByProjectId(project.getId()));
+            project.setCustomers(customerDao.getAllCustomerByProjectId(project.getId()));
+        });
+  return allProject;
     }
 
     @Override

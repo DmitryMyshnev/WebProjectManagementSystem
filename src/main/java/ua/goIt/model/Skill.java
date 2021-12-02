@@ -22,9 +22,12 @@ public class Skill implements Identity {
         this.developers = new ArrayList<>();
     }
 
-    void setDeveloper(Developer developer) {
-        this.developers.add(developer);
+    public String getDevelopersAsString(){
+        StringBuffer res = new StringBuffer();
+        developers.forEach(developer -> res.append(developer.getName()).append(";<br>"));
+        return res.toString();
     }
+
 
     @Override
     public Long getId() {

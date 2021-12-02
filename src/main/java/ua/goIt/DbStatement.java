@@ -39,7 +39,7 @@ public class DbStatement {
         }
     }
    public static Connection createConnection(){
-        if(dbStatement == null){
+        if(connection == null){
             try {
                 connection = DataSourceHolder.getDataSource().getConnection();
             } catch (SQLException e) {

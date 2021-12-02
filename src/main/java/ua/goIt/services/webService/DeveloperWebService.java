@@ -12,18 +12,14 @@ import java.util.Optional;
 
 public class DeveloperWebService implements CrudWeb<Developer> {
     private final DeveloperDao developerDao;
-    private final DeveloperToProjectDao developerToProjectDao;
-    private final DeveloperToSkillDao developerToSkillDao;
     private final SkillDao skillDao;
     private final ProjectDao projectDao;
     private static DeveloperWebService developerWebService;
 
     private DeveloperWebService() {
-        developerDao = new DeveloperDao();
-        developerToProjectDao = new DeveloperToProjectDao();
-        developerToSkillDao = new DeveloperToSkillDao();
-        skillDao = new SkillDao();
-        projectDao = new ProjectDao();
+        developerDao =  DeveloperDao.getInstance();
+        skillDao = SkillDao.getInstance();
+        projectDao =  ProjectDao.getInstance();
     }
 
     @Override
@@ -38,8 +34,6 @@ public class DeveloperWebService implements CrudWeb<Developer> {
 
     @Override
     public void delete(Developer entity) {
-        developerToProjectDao.getAllById(entity.getId()).forEach(developerToProjectDao::delete);
-        developerToSkillDao.getAllById(entity.getId()).forEach(developerToSkillDao::delete);
         developerDao.delete(entity);
     }
 
@@ -76,9 +70,6 @@ public class DeveloperWebService implements CrudWeb<Developer> {
         return skillDao.getSkillsById(id);
     }
 
-    public List<String> getAllLanguages() {
-        return skillDao.getAllLanguages();
-    }
 
     public List<Project> getAllProject(Long id){
         return projectDao.getProjectByDeveloperId(id);

@@ -27,18 +27,21 @@ public class Project implements Identity {
     public Project() {
     }
 
-    public void setDeveloper(Developer developer) {
-        this.developers.add(developer);
+  public String getDevelopersAsString(){
+      StringBuffer res = new StringBuffer();
+      developers.forEach(developer -> res.append(developer.getName()).append(";<br>"));
+      return res.toString();
+  }
+    public String getCompanyAsString(){
+        StringBuffer res = new StringBuffer();
+        companies.forEach(company -> res.append(company.getName()).append(";<br>"));
+        return res.toString();
     }
-
-    public void setCompany(Company company) {
-        this.companies.add(company);
+    public String getCustomerAsString(){
+        StringBuffer res = new StringBuffer();
+        customers.forEach(company -> res.append(company.getFirstName()).append(" ").append(company.getLastName()).append(";<br>"));
+        return res.toString();
     }
-
-    public void setCustomer(Customer customer) {
-        this.customers.add(customer);
-    }
-
     @Override
     public Long getId() {
         return id;

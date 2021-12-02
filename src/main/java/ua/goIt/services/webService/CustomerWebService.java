@@ -1,21 +1,22 @@
 package ua.goIt.services.webService;
 
 import ua.goIt.dao.CustomerDao;
-import ua.goIt.dao.CustomerToProjectDao;
-import ua.goIt.dao.DeveloperToSkillDao;
+import ua.goIt.dao.ProjectDao;
 import ua.goIt.model.Customer;
+import ua.goIt.model.Project;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class CustomerWebService implements CrudWeb<Customer> {
     private static CustomerWebService customerWebService;
     private final CustomerDao customerDao;
-    private final CustomerToProjectDao customerToProjectDao;
+    private final ProjectDao projectDao;
 
     private CustomerWebService() {
-        customerDao = new CustomerDao();
-        customerToProjectDao = new CustomerToProjectDao();
+        customerDao = CustomerDao.getInstance();
+        projectDao = ProjectDao.getInstance();
     }
 
     @Override
@@ -30,18 +31,23 @@ public class CustomerWebService implements CrudWeb<Customer> {
 
     @Override
     public void delete(Customer entity) {
-        customerToProjectDao.getAllById(entity.getId()).forEach(customerToProjectDao::delete);
         customerDao.delete(entity);
     }
 
     @Override
     public List<Customer> getAll() {
-        return customerDao.getAll();
+        List<Customer> allCustomer = customerDao.getAll();
+        allCustomer.forEach(customer -> customer.setProjects(getAllProjectById(customer.getId())));
+        return allCustomer;
     }
 
     @Override
     public Optional<Customer> findById(Long id) {
         return customerDao.getById(id);
+    }
+
+    private List<Project> getAllProjectById(Long id){
+       return projectDao.getProjectByCustomerId(id);
     }
 
     public static CustomerWebService getInstance() {

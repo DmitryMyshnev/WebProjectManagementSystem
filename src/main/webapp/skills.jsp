@@ -24,6 +24,7 @@
                 <th scope="col">Id</th>
                 <th scope="col">Language</th>
                 <th scope="col">Level</th>
+                <th scope="col">Developers</th>
             </tr>
             </thead>
             <tbody>
@@ -36,8 +37,9 @@
                     <td><%= skill.getId() %></td>
                     <td><%= skill.getLanguage() %></td>
                     <td><%= skill.getLevel() %></td>
+                    <td><%= skill.getDevelopersAsString() %></td>
                     <td>
-                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" >
                             <div class="btn-group me-2" role="group" aria-label="Second group">
                                 <a href="/skill/edit/<%= skill.getId() %>" type="button" class="btn btn-warning">Edit</a>
                                 <a href="/skill/remove/<%= skill.getId() %>" type="button" class="btn btn-danger">Remove</a>

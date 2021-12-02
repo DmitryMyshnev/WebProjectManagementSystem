@@ -29,14 +29,6 @@ public class Developer implements Identity {
         skills = new ArrayList<>();
     }
 
-    public void setProject(Project project) {
-        this.projects.add(project);
-    }
-
-    public void setSkill(Skill skill) {
-        this.skills.add(skill);
-    }
-
     public String getSkillsAsString() {
         StringBuffer res = new StringBuffer();
         skills.forEach(skill -> {
