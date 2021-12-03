@@ -80,7 +80,7 @@
         age: age.value,
         sex: gender.value,
         salary: salary.value
-        skills:{}
+
        }
          let url = '/developer/edit/<%= developer.getId() %>';
          let method = 'PUT';

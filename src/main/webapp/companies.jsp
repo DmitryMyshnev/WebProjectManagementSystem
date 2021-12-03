@@ -37,6 +37,7 @@
                     <td><%= company.getId() %></td>
                     <td><%= company.getName() %></td>
                     <td><%= company.getQuantityEmployee() %></td>
+
                     <td><%= company.getProjectsAsString() %></td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">

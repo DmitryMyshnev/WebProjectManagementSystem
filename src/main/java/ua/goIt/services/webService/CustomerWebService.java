@@ -5,7 +5,6 @@ import ua.goIt.dao.ProjectDao;
 import ua.goIt.model.Customer;
 import ua.goIt.model.Project;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

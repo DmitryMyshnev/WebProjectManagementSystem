@@ -12,6 +12,8 @@ import ua.goIt.services.webService.CompanyWebService;
 
 import java.io.IOException;
 import java.util.Comparator;
+import java.util.List;
+
 @WebServlet("/companies")
 public class CompanyServlet extends HttpServlet {
     public static final Logger LOGGER = LogManager.getLogger(CompanyServlet.class);
@@ -19,6 +21,7 @@ public class CompanyServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         companyWebService = (CompanyWebService) getServletContext().getAttribute("companyWebService");
+
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
