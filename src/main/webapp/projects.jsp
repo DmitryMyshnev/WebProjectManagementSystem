@@ -44,9 +44,34 @@
                     <td><%= project.getDescription() == null? "":project.getDescription() %></td>
                     <td><%= project.getCost() %></td>
                     <td><%= project.getDate() %></td>
-                    <td><%= project.getDevelopersAsString() %></td>
-                    <td><%= project.getCompanyAsString() %></td>
-                    <td><%= project.getCustomerAsString() %></td>
+                    <td>
+                     <%
+                         java.util.List<ua.goIt.model.Developer> developers = project.getDevelopers();
+                             for(ua.goIt.model.Developer dev : developers){%>
+                                 <a href = "/developer/<%= dev.getId()%>">
+                                   <%= dev.getName()%>
+                                  ;<br></a>
+                        <%}%>
+                    </td>
+                    <td>
+                     <%
+                        java.util.List<ua.goIt.model.Company> companies = project.getCompanies();
+                          for(ua.goIt.model.Company cmp : companies){%>
+                              <a href = "/company/<%= cmp.getId()%>">
+                                 <%= cmp.getName()%>
+                                 ;<br></a>
+                        <%}%>
+                    </td>
+                    <td>
+                       <%
+                          java.util.List<ua.goIt.model.Customer> customers = project.getCustomers();
+                             for(ua.goIt.model.Customer custom : customers){%>
+                                 <a href = "/customer/<%= custom.getId()%>">
+                                 <%= custom.getFirstName()%>
+                                 <%= custom.getLastName()%>
+                                 ;<br></a>
+                          <%}%>
+                    </td>
 
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">

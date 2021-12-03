@@ -29,7 +29,7 @@ public class EditCompanyServlet extends HttpServlet {
         if (comp.isPresent()) {
             Company company = comp.get();
             req.setAttribute("company", company);
-            req.getRequestDispatcher("/company.jsp").forward(req, resp);
+            req.getRequestDispatcher("/edit_company.jsp").forward(req, resp);
         }
         resp.sendRedirect("/companies");
     }

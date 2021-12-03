@@ -34,7 +34,7 @@ public class EditDeveloperServlet extends HttpServlet {
         if (userOpt.isPresent()) {
             Developer developer = userOpt.get();
             req.setAttribute("developer", developer);
-            req.getRequestDispatcher("/developer.jsp").forward(req, resp);
+            req.getRequestDispatcher("/edit_developer.jsp").forward(req, resp);
         }
         resp.sendRedirect("/developers");
     }

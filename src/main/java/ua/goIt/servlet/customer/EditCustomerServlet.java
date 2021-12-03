@@ -31,7 +31,7 @@ public class EditCustomerServlet extends HttpServlet {
         if (cmt.isPresent()) {
             Customer customer = cmt.get();
             req.setAttribute("customer", customer);
-            req.getRequestDispatcher("/customer.jsp").forward(req, resp);
+            req.getRequestDispatcher("/edit_customer.jsp").forward(req, resp);
         }
         resp.sendRedirect("/customers");
     }

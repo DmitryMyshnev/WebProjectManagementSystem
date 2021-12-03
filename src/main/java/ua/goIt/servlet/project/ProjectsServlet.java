@@ -9,9 +9,10 @@ import ua.goIt.model.Project;
 import ua.goIt.services.webService.ProjectWebService;
 
 import java.io.IOException;
-import java.util.Optional;
-@WebServlet("/project/*")
-public class ProjectServlet extends HttpServlet {
+import java.util.Comparator;
+
+@WebServlet("/projects")
+public class ProjectsServlet extends HttpServlet {
     private ProjectWebService projectWebService;
 
     @Override
@@ -21,14 +22,9 @@ public class ProjectServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String[] requestURI = req.getRequestURI().split("/");
-        String id = requestURI[requestURI.length-1];
-        Optional<Project> prj = projectWebService.findById(Long.parseLong(id)).stream().map(Project.class::cast).findFirst();
-        if (prj.isPresent()) {
-            Project project = prj.get();
-            req.setAttribute("project", project);
-            req.getRequestDispatcher("/project.jsp").forward(req, resp);
-        }
-        resp.sendRedirect("/projects");
+        Object[] project = projectWebService.getAll().stream().map(Project.class::cast).sorted(Comparator.comparing(Project::getId)).toArray();
+        req.setAttribute("projects", project);
+        req.getRequestDispatcher("projects.jsp").include(req, resp);
     }
+
 }

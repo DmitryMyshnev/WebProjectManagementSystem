@@ -37,7 +37,15 @@
                     <td><%= skill.getId() %></td>
                     <td><%= skill.getLanguage() %></td>
                     <td><%= skill.getLevel() %></td>
-                    <td><%= skill.getDevelopersAsString() %></td>
+                    <td>
+                     <%
+                        java.util.List<ua.goIt.model.Developer> developers = skill.getDevelopers();
+                              for(ua.goIt.model.Developer dev : developers){%>
+                                <a href = "/developer/<%=dev.getId()%>">
+                                <%= dev.getName()%>
+                                ;<br></a>
+                       <%}%>
+                    </td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" >
                             <div class="btn-group me-2" role="group" aria-label="Second group">

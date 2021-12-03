@@ -43,8 +43,24 @@
                     <td><%= developer.getAge() %></td>
                     <td><%= developer.getSex() %></td>
                     <td><%= developer.getSalary() %></td>
-                    <td style="width:150px;"><%= developer.getSkillsAsString() %></td>
-                    <td style="width:150px;"><%= developer.getProjectAsString() %></td>
+                    <td>
+                          <%
+                           java.util.List<ua.goIt.model.Skill> skills = developer.getSkills();
+                              for(ua.goIt.model.Skill skl : skills){%>
+                                <p>
+                                   <%= skl.getLanguage()%>
+                                   (<%=skl.getLevel()%>);<br>
+                                </p>
+                            <%}%>
+                    </td>
+                    <td>
+                          <%
+                           java.util.List<ua.goIt.model.Project> projects = developer.getProjects();
+                             for(ua.goIt.model.Project prj : projects){%>
+                                  <a href = "/project/<%=prj.getId()%>"> <%= prj.getName()%>;<br></a>
+                           <%}%>
+                    </td>
+
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="Second group">

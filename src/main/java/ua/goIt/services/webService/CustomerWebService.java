@@ -42,7 +42,11 @@ public class CustomerWebService implements CrudWeb<Customer> {
 
     @Override
     public Optional<Customer> findById(Long id) {
-        return customerDao.getById(id);
+        Optional<Customer> customer = customerDao.getById(id);
+        customer.ifPresent(custom->{
+            custom.setProjects(projectDao.getProjectByCustomerId(id));
+        });
+        return customer;
     }
 
     private List<Project> getAllProjectById(Long id){

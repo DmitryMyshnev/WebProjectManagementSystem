@@ -29,7 +29,7 @@ public class EditProjectServlet extends HttpServlet {
         if (prj.isPresent()) {
             Project project = prj.get();
             req.setAttribute("project", project);
-            req.getRequestDispatcher("/project.jsp").forward(req, resp);
+            req.getRequestDispatcher("/edit_project.jsp").forward(req, resp);
         }
         resp.sendRedirect("/projects");
     }

@@ -4,6 +4,7 @@ import ua.goIt.dao.CompanyDao;
 import ua.goIt.dao.CustomerDao;
 import ua.goIt.dao.DeveloperDao;
 import ua.goIt.dao.ProjectDao;
+import ua.goIt.model.Company;
 import ua.goIt.model.Project;
 
 import java.util.List;
@@ -51,7 +52,13 @@ public class ProjectWebService implements CrudWeb<Project> {
 
     @Override
     public Optional<Project> findById(Long id) {
-        return projectDao.getById(id);
+        Optional<Project> project = projectDao.getById(id);
+        project.ifPresent(dev-> {
+            dev.setDevelopers(developerDao.getAllDeveloperByProjectId(id));
+            dev.setCompanies(companyDao.getAllCompanyByProjectId(id));
+            dev.setCustomers(customerDao.getAllCustomerByProjectId(id));
+        });
+        return project;
     }
 
     public static ProjectWebService getInstance() {

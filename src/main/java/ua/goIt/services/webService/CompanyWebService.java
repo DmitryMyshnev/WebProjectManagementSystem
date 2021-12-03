@@ -15,7 +15,7 @@ public class CompanyWebService implements CrudWeb<Company> {
 
 
     private CompanyWebService() {
-        companyDao =  CompanyDao.getInstance();
+        companyDao = CompanyDao.getInstance();
         projectDao = ProjectDao.getInstance();
     }
 
@@ -43,11 +43,13 @@ public class CompanyWebService implements CrudWeb<Company> {
 
     @Override
     public Optional<Company> findById(Long id) {
-        return companyDao.getById(id);
+        Optional<Company> company = companyDao.getById(id);
+        company.ifPresent(cmp-> cmp.setProjects(projectDao.getProjectByCompanyId(id)));
+     return company;
     }
 
-    private List<Project> getAllProjectById(Long id){
-      return projectDao.getProjectByCompanyId(id);
+    private List<Project> getAllProjectById(Long id) {
+        return projectDao.getProjectByCompanyId(id);
     }
 
     public static CompanyWebService getInstance() {

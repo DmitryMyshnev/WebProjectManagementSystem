@@ -62,7 +62,7 @@ public class SkillDao extends AbstractDao<Skill>{
         LOGGER.debug("Deleted record from " + getTableName());
     }
 
-    public List<Skill> getSkillsById(Long id){
+    public List<Skill> getSkillsByDeveloperId(Long id){
         List<Skill> resultList = new ArrayList<>();
         String query = String.format("select * from %s s where s.id in(select skills_id from developer_skills ds where ds.developer_id = ?)", getTableName());
         try {

@@ -37,7 +37,13 @@
                     <td><%= customer.getId() %></td>
                     <td><%= customer.getFirstName() %></td>
                     <td><%= customer.getLastName() %></td>
-                    <td><%= customer.getProjectsAsString() %></td>
+                    <td>
+                          <%
+                            java.util.List<ua.goIt.model.Project> projects = customer.getProjects();
+                               for(ua.goIt.model.Project prj : projects){%>
+                                  <a href = "/project/<%=prj.getId()%>"> <%= prj.getName()%>;<br></a>
+                          <%}%>
+                    </td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="Second group">

@@ -12,10 +12,9 @@ import ua.goIt.services.webService.CompanyWebService;
 
 import java.io.IOException;
 import java.util.Comparator;
-import java.util.Optional;
 
-@WebServlet("/company/*")
-public class CompanyServlet extends HttpServlet {
+@WebServlet("/companies")
+public class CompaniesServlet extends HttpServlet {
     public static final Logger LOGGER = LogManager.getLogger(CompaniesServlet.class);
     private CompanyWebService companyWebService;
     @Override
@@ -25,14 +24,8 @@ public class CompanyServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String[] requestURI = req.getRequestURI().split("/");
-        String id = requestURI[requestURI.length-1];
-        Optional<Company> comp = companyWebService.findById(Long.parseLong(id)).stream().map(Company.class::cast).findFirst();
-        if (comp.isPresent()) {
-            Company company = comp.get();
-            req.setAttribute("company", company);
-            req.getRequestDispatcher("/company.jsp").forward(req, resp);
-        }
+        Object[] company = companyWebService.getAll().stream().map(Company.class::cast).sorted(Comparator.comparing(Company::getId)).toArray();
+        req.setAttribute("companies", company);
         req.getRequestDispatcher("/companies.jsp").include(req, resp);
     }
 }

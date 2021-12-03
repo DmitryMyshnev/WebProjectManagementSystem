@@ -52,10 +52,10 @@ public class DeveloperWebService implements CrudWeb<Developer> {
     @Override
     public Optional<Developer> findById(Long id) {
         Optional<Developer> developer = developerDao.getById(id);
-        List<Skill> skills = new ArrayList<>(getAllSkills(developer.get().getId()));
-        List<Project>  projects = new ArrayList<>(getAllProject(developer.get().getId()));
-        developer.get().setSkills(skills);
-        developer.get().setProjects(projects);
+        developer.ifPresent(dev->{
+            dev.setProjects(projectDao.getProjectByDeveloperId(id));
+            dev.setSkills(skillDao.getSkillsByDeveloperId(id));
+        });
         return developer;
     }
 
@@ -67,7 +67,7 @@ public class DeveloperWebService implements CrudWeb<Developer> {
     }
 
     public List<Skill> getAllSkills(Long id) {
-        return skillDao.getSkillsById(id);
+        return skillDao.getSkillsByDeveloperId(id);
     }
 
 
