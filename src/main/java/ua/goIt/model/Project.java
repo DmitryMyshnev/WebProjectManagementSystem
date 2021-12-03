@@ -27,21 +27,6 @@ public class Project implements Identity {
     public Project() {
     }
 
-  public String getDevelopersAsString(){
-      StringBuffer res = new StringBuffer();
-      developers.forEach(developer -> res.append(developer.getName()).append(";<br>"));
-      return res.toString();
-  }
-    public String getCompanyAsString(){
-        StringBuffer res = new StringBuffer();
-        companies.forEach(company -> res.append(company.getName()).append(";<br>"));
-        return res.toString();
-    }
-    public String getCustomerAsString(){
-        StringBuffer res = new StringBuffer();
-        customers.forEach(company -> res.append(company.getFirstName()).append(" ").append(company.getLastName()).append(";<br>"));
-        return res.toString();
-    }
     @Override
     public Long getId() {
         return id;

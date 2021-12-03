@@ -20,13 +20,6 @@ public class Customer implements Identity {
 
     public Customer() {
     }
-    public String getProjectsAsString() {
-        StringBuffer res = new StringBuffer();
-        projects.forEach(project -> {
-            res.append(project.getName()).append(";<br>");
-        });
-        return res.toString();
-    }
 
     @Override
     public Long getId() {

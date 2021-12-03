@@ -21,13 +21,6 @@ public class Company implements Identity {
     public Company() {
     }
 
-    public String getProjectsAsString() {
-        StringBuffer res = new StringBuffer();
-        projects.forEach(project -> {
-            res.append(project.getName()).append(";<br>");
-        });
-        return res.toString();
-    }
     @Override
     public Long getId() {
         return id;

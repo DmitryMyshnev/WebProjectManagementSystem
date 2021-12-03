@@ -22,13 +22,6 @@ public class Skill implements Identity {
         this.developers = new ArrayList<>();
     }
 
-    public String getDevelopersAsString(){
-        StringBuffer res = new StringBuffer();
-        developers.forEach(developer -> res.append(developer.getName()).append(";<br>"));
-        return res.toString();
-    }
-
-
     @Override
     public Long getId() {
         return id;

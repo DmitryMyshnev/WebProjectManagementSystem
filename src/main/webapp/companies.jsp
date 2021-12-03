@@ -41,7 +41,7 @@
                     <td><%
                           java.util.List<ua.goIt.model.Project> projects = company.getProjects();
                             for(ua.goIt.model.Project prj : projects){%>
-                                <a href = "/projects"> <%= prj.getName()%>;<br></a>
+                                <a href = "/project/<%=prj.getId()%>"> <%= prj.getName()%>;<br></a>
                            <% }%>
                     </td>
                     <td>

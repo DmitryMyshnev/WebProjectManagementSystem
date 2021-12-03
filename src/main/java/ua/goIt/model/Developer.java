@@ -29,20 +29,6 @@ public class Developer implements Identity {
         skills = new ArrayList<>();
     }
 
-    public String getSkillsAsString() {
-        StringBuffer res = new StringBuffer();
-        skills.forEach(skill -> {
-            res.append(skill.getLanguage()).append(" (").append(skill.getLevel()).append(");<br>");
-        });
-        return res.toString();
-    }
-    public String getProjectAsString(){
-        StringBuffer res = new StringBuffer();
-        projects.forEach(project -> {
-            res.append(project.getName()).append(";<br>");
-        });
-        return res.toString();
-    }
     @Override
     public Long getId() {
         return id;
